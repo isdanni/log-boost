@@ -20,7 +20,6 @@ int MyTime::getMonth(tm input) {
 	return 1 + input.tm_mon;
 };
 int MyTime::getDate(tm input) {
-	//Local Time: Beijing
 	int localhour = input.tm_hour - 8;
 	if (localhour < 0) {
 		return 1+input.tm_mday-1;
